@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+  
+header {
+  position: relative;
+  background-color: #f2f8f9;
+  text-align: center;
+  padding: 10px 0;
+}
+  
+
+  #headerCanvas {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+  background-color: #eef5f7;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:active {
+  color: #0056b3;
+  transform: scale(0.95);
+}
+  
+  nav .join-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+  main {
+    flex: 1; /* Makes main take up the remaining vertical space */
+    background-color: #eef5f7;
+    text-align: center;
+    padding: 50px 0;
+}
+  
+  .hero {
+    background-color: #eef5f7;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .specs {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .specs div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+  
+  .purchase-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #f2f8f9;
+    border: none;
+    font-weight: bold;
+  }
+
+
+  
+  @media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+    #headerCanvas{
+      display: none;
+    }
+  
+    .specs div {
+      grid-template-columns: 1fr;
+    }
+  }
+  
