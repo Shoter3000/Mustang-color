@@ -23,15 +23,28 @@
   </header>
   
   <main>
-    <section class="hero">
-      <h3>SEVENTH GENERATION</h3>
-      <h4>OF FORD MUSTANG</h4>
-      <p>
-        The first-generation Ford Mustang was manufactured by Ford from March 1964 until 1973...
-      </p>
+    <section class="slideshow-container">
+      <h2>Select Your Mustang</h2>
+      <div class="slideshow">
+        <img id="carImage" alt="Mustang Car">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
     </section>
-    <script src="js/canvas.js"></script>
-    <canvas></canvas>
+
+    <section class="svg-section">
+      <h2>Customize Logo Color</h2>
+      <div id="colorSvgContainer">
+        <!-- SVG loaded here -->
+      </div>
+      <div class="color-info">
+        <div>
+          <span id="colorName">Atlas Blue Metallic</span>
+          <input type="color" id="colorPicker" value="#808080" onchange="updateSvgColor()">
+        </div>
+      </div>
+    </section>
+      
   </main>
 
   <section class="purchase-section">
@@ -55,7 +68,8 @@
   </footer>
 
 
-  <script src="canvas.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/slideshow.js"></script>
 
 </body>
 </html>
