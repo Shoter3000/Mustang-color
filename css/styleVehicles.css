@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@font-face {
+  font-family: 'American Captain';
+  src: url('../fonts/AmericanCaptain-MdEY.otf') format('opentype');
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    linear-gradient(
+      45deg, 
+      rgba(0, 0, 0, 0.1) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(0, 0, 0, 0.1) 50%, 
+      rgba(0, 0, 0, 0.1) 75%, 
+      transparent 75%, 
+      transparent
+    );
+  background-size: 100%, 50px 50px;
+  background-color: #1a1a1a;
+}
+  
+header {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.217);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+h1 {
+  font-family: 'American Captain', sans-serif;
+  text-align: center;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+#headerCanvas {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+nav {
+  position: absolute;
+  right: 40px;
+  margin-right: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+  
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: all 0.15s ease;
+  font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+  color: #1f1f1f;
+  background-color: #eef5f7;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  flex: 1;
+  background-color: rgba(238, 245, 247, 0.1);
+  color: #e3e3e3;
+  text-align: center;
+  padding: 50px 0;
+}
+  
+/* Slideshow section */
+.slideshow-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.slideshow {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slideshow img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 40%;
+}
+
+.slideshow .prev {
+  left: 10px;
+}
+
+.slideshow .next {
+  right: 10px;
+}
+
+.slideshow button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* SVG Section */
+.svg-section {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.svg-section h2 {
+  margin-bottom: 20px;
+}
+
+#colorSvgContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#colorSvgContainer svg {
+  width: 400px;  
+  height: auto;  
+}
+
+.color-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Footer Section */
+.specs {
+  background-color: rgba(17, 17, 17, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .specs div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  .copyright {
+    background-color: rgba(17, 17, 17, 0.8);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+  
+/* Purchase button Section */
+.purchase-section {
+  background-color: rgba(238, 245, 247, 0.05);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.purchase-btn {
+    padding: 15px 40px;
+    background-color: #f2f8f9;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-btn:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.purchase-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+  /* Media Queries */
+
+  @media screen and (max-width: 1700px) {
+    header {
+      flex-direction: column;
+      padding: 15px 20px;
+    }
+  
+    nav {
+      position: static;
+      margin-top: 20px;
+    }
+  
+    .specs div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  nav {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .specs div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li {
+    margin: 0 8px;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+
+  .slideshow {
+    width: 90%;
+  }
+
+  #colorSvgContainer svg {
+    width: 300px;
+  }
+
+  .specs div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  #headerCanvas {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .slideshow {
+    width: 95%;
+  }
+
+  #colorSvgContainer svg {
+    width: 250px;
+  }
+
+  .specs div {
+    grid-template-columns: 1fr;
+  }
+
+  .purchase-btn {
+    padding: 12px 30px;
+  }
+}

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/WebsiteLogo.png" type="image/png">
   <title>Ford Mustang</title>
-  <link rel="stylesheet" href="css/styleHome.css">
+  <link rel="stylesheet" href="css/styleVehicles.css">
 </head>
 <body>
   <header>
     <canvas id="headerCanvas" width="150" height="150"></canvas>
-    <h1>FORD MUSTANG - 7th Generation</h1>
+    <h1>CHOOSE YOUR MUSTANG COLOR</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,8 +22,33 @@
   </header>
   
   <main>
+    <section class="slideshow-container">
+      <h2>Select Your Mustang</h2>
+      <div class="slideshow">
+        <img id="carImage" alt="Mustang Car">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="svg-section">
+      <h2>Customize Logo Color</h2>
+      <div id="colorSvgContainer">
+        <!-- SVG loaded here -->
+      </div>
+      <div class="color-info">
+        <div>
+          <span id="colorName">Atlas Blue Metallic</span>
+          <input type="color" id="colorPicker" value="#808080" onchange="updateSvgColor()">
+        </div>
+      </div>
+    </section>
       
   </main>
+
+  <section class="purchase-section">
+    <button class="purchase-btn">Purchase</button>
+  </section>
 
   <footer>
     <section class="specs">
@@ -43,6 +68,7 @@
 
 
   <script src="js/canvas.js"></script>
+  <script src="js/slideshow.js"></script>
 
 </body>
 </html>

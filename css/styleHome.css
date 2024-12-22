@@ -51,7 +51,6 @@ h1 {
   font-family: 'American Captain', sans-serif;
   text-align: center;
   color: #e6e6e6;
-  text-transform: uppercase;
   font-weight: 900;
 }
 
@@ -99,23 +98,6 @@ nav ul li a:hover {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-  
-nav .join-btn {
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-nav .join-btn:hover {
-  background-color: #e9e9e9;
-  color: #000;
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
 main {
   flex: 1;
   background-color: rgba(238, 245, 247, 0.1);
@@ -123,80 +105,6 @@ main {
   text-align: center;
   padding: 50px 0;
 }
-  
-/* Slideshow section */
-.slideshow-container {
-  margin: 20px auto;
-  text-align: center;
-}
-
-.slideshow {
-  position: relative;
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.slideshow img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.slideshow button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 40%;
-}
-
-.slideshow .prev {
-  left: 10px;
-}
-
-.slideshow .next {
-  right: 10px;
-}
-
-.slideshow button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* SVG Section */
-.svg-section {
-  margin: 30px auto;
-  text-align: center;
-}
-
-.svg-section h2 {
-  margin-bottom: 20px;
-}
-
-#colorSvgContainer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-#colorSvgContainer svg {
-  width: 400px;  
-  height: auto;  
-}
-
-.color-info > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
 
 /* Footer Section */
 .specs {
@@ -219,40 +127,8 @@ main {
     text-align: center;
     font-size: 0.9rem;
 }
-  
-/* Purchase button Section */
-.purchase-section {
-  background-color: rgba(238, 245, 247, 0.05);
-    padding: 30px 0;
-    text-align: center;
-}
 
-.purchase-btn {
-    padding: 15px 40px;
-    background-color: #f2f8f9;
-    border: 1px solid black;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.purchase-btn:hover {
-    background-color: #007BFF;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.purchase-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-
-  /* Media Queries */
+/* Media Queries */
 
   @media screen and (max-width: 1700px) {
     header {
