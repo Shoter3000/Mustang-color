@@ -233,6 +233,27 @@ main {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* SweetAlert2 Styles */
+.swal2-popup {
+  background-color: #1a1a1a !important;
+  color: #e3e3e3 !important; 
+  border: none !important;
+}
+
+.swal2-title {
+  color: #e6e6e6 !important;
+  font-family: 'American Captain', sans-serif !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #767676 !important;
+  border: 1px solid black !important;
+}
+
+.swal2-styled.swal2-confirm:hover {
+  background-color: #007BFF !important;
+  color: white !important;
+}
 
 
   /* Media Queries */
@@ -293,6 +314,10 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
+  .swal2-popup {
+    font-size: 0.9rem !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -329,5 +354,9 @@ main {
 
   .purchase-btn {
     padding: 12px 30px;
+  }
+
+  .swal2-popup {
+    width: 90% !important;
   }
 }
